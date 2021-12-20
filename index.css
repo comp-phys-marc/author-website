@@ -369,7 +369,7 @@ img {
 }
 @media only screen and (max-width: 630px) {
   .info-grid .square-radio {
-    width: 22%;
+    width: 100%;
   }
 }
 .info-grid .form-control {
