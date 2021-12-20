@@ -1,0 +1,14 @@
+.review {
+    display: grid;
+    grid-template-columns: 20% [col-start] 80% [col-start];
+
+    img {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+    
+    br {
+        margin: $small-size;
+    }
+}

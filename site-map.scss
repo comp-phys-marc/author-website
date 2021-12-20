@@ -1,0 +1,26 @@
+.site-map {
+    border-top: 1px solid $grey;
+    padding-top: $xlarge-size;
+
+    color: $dark;
+
+    @include element(grid) {
+        display: grid;
+        grid-template-columns: repeat(4, 23% [col-start]);
+        column-gap: 2.66%;
+        row-gap: $large-size;
+
+        @include smallScreen() {
+            column-gap: 10%;
+            grid-template-columns: 45% [col-start] 45% [col-start];
+        }
+    }
+
+    br {
+        margin: $medium-size;
+    }
+
+    small {
+        color: $muted;
+    }
+}

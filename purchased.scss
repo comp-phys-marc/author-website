@@ -1,0 +1,32 @@
+.purchased {
+    color: $dark;
+
+    margin: $small-size;
+    padding: $medium-size;
+
+    margin-bottom: $large-size;
+
+    @include element(image-grid) {
+        display: grid;
+        grid-template-columns: repeat(4, 23% [col-start]);
+        column-gap: 2.66%;
+
+        @include smallScreen() {
+            column-gap: 10%;
+            grid-template-columns: 45% [col-start] 45% [col-start];
+        }
+    }
+
+    .purchase-text {
+        display: inline-block;
+
+        @include modifier(right) {
+            float: right;
+            font-weight: 600;
+        }
+
+        @include modifier(colour) {
+            color: $muted;
+        }
+    }
+}

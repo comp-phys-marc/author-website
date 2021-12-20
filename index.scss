@@ -1,0 +1,55 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+@import './headers.scss';
+@import './breadcrumb.scss';
+@import './image-grid.scss';
+@import './info-grid.scss';
+@import './review.scss';
+@import './purchased.scss';
+@import './site-map.scss';
+
+body {
+    margin: 0;
+    font-family: Open Sans;
+}
+
+vr {
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+    border-right: 1px solid grey;
+    height: $medium-size;
+    width: 0;
+    margin-top: 7px;
+}
+
+.main-matter {
+    max-width: $max-width - $medium-size * 3;
+
+    @include smallScreen() {
+        max-width: 650px;
+    }
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    padding-top: $xlarge-size;
+    padding-bottom: $large-size;
+
+    .footer-text {
+        display: inline-block;
+    
+        color: $muted;
+    
+        @include modifier(right) {
+            float: right;
+        }
+
+        @include modifier(spaced) {
+            margin-left: $medium-size;
+        }
+    }
+}
