@@ -340,6 +340,11 @@ img {
   grid-template-columns: repeat(8, 10.5% [col-start]);
   column-gap: 12px;
 }
+@media only screen and (max-width: 630px) {
+  .info-grid .size-grid--horizontal {
+    grid-template-columns: repeat(4, 22% [col-start]);
+  }
+}
 .info-grid .square-radio {
   appearance: none;
   margin: 1px;
@@ -360,6 +365,11 @@ img {
 @media only screen and (max-width: 1000px) {
   .info-grid .square-radio {
     width: 3.75rem;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .info-grid .square-radio {
+    width: 22%;
   }
 }
 .info-grid .form-control {

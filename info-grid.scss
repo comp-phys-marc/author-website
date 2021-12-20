@@ -123,6 +123,10 @@
         @include modifier(horizontal) {
             grid-template-columns: repeat(8, 10.5% [col-start]);
             column-gap: 12px;
+
+            @include tinyScreen() {
+                grid-template-columns: repeat(4, 22% [col-start]);
+            }
         }
     }
 
@@ -146,6 +150,10 @@
 
         @include smallScreen() {
             width: 3.75rem;
+        }
+
+        @include tinyScreen() {
+            width: 22%;
         }
     }
       

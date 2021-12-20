@@ -23,3 +23,11 @@
         @content;
     }
 }
+
+/// Tiny Screen Size Mixin
+/// @access public
+@mixin tinyScreen() {
+    @media only screen and (max-width: 630px) {
+        @content;
+    }
+}
