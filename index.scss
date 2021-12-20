@@ -49,6 +49,10 @@ vr {
     
         @include modifier(right) {
             float: right;
+
+            @include tinyScreen() {
+                float: left;
+            }
         }
 
         @include modifier(spaced) {

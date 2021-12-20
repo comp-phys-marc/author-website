@@ -142,6 +142,10 @@
                 padding-top: $tiny-size;
                 margin: $normal-size;
                 height: 24px;
+
+                @include smallScreen() {
+                    margin: $small-size;
+                }
             }
 
             p {

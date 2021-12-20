@@ -17,13 +17,15 @@
             column-gap: 10%;
             grid-template-columns: 45% [col-start] 45% [col-start];
         }
+
+        @include tinyScreen() {
+            column-gap: 10%;
+            grid-template-columns: 90% [col-start];
+        }
     }
 
-    br {
-        margin: $medium-size;
-    }
-
-    small {
+    div {
+        margin-top: $normal-size;
         color: $muted;
     }
 }
