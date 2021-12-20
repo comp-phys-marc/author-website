@@ -2,6 +2,9 @@
     border-top: 1px solid $grey;
     padding-top: $xlarge-size;
 
+    padding-left: $large-size;
+    padding-right: $large-size;
+
     color: $dark;
 
     @include element(grid) {

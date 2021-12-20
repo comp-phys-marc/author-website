@@ -418,6 +418,11 @@ img {
   display: grid;
   grid-template-columns: 20% [col-start] 80% [col-start];
 }
+@media only screen and (max-width: 630px) {
+  .review {
+    grid-template-columns: 100% [col-start];
+  }
+}
 .review img {
   border-radius: 50%;
   height: 50px;
@@ -458,6 +463,8 @@ img {
 .site-map {
   border-top: 1px solid lightgrey;
   padding-top: 100px;
+  padding-left: 42px;
+  padding-right: 42px;
   color: #111827;
 }
 .site-map__grid {
@@ -507,6 +514,8 @@ vr {
 .footer {
   padding-top: 100px;
   padding-bottom: 42px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .footer .footer-text {
   display: inline-block;
