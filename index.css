@@ -125,6 +125,7 @@
 }
 @media only screen and (max-width: 1000px) {
   .subheader .utility-bar__left svg {
+    padding-top: 10px;
     margin: 10px;
   }
 }
@@ -169,7 +170,8 @@
 }
 @media only screen and (max-width: 1000px) {
   .subheader .utility-bar__right__icon {
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 @media only screen and (max-width: 1000px) {
