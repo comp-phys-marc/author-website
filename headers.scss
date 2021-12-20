@@ -191,6 +191,10 @@
                 margin: $normal-size;
                 height: 24px;
 
+                @include smallScreen() {
+                    margin: $small-size;
+                }
+
                 @include modifier(large-only) {
                     @include smallScreen() {
                         display: none;

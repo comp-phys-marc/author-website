@@ -168,6 +168,11 @@
   height: 24px;
 }
 @media only screen and (max-width: 1000px) {
+  .subheader .utility-bar__right__icon {
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 1000px) {
   .subheader .utility-bar__right__icon--large-only {
     display: none;
   }
