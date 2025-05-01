@@ -1,6 +1,10 @@
 .review {
     display: grid;
     grid-template-columns: 20% [col-start] 80% [col-start];
+
+    p {
+        height: auto;
+    }
     
     @include tinyScreen() {
         grid-template-columns: 100% [col-start];

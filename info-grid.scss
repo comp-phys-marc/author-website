@@ -37,8 +37,8 @@
 
     @include element(details) {
         color: darken($muted, 5%);
-        height: $xlarge-size;
         border-bottom: 1px solid $grey;
+        padding-bottom: $small-size;
         
         margin-right: $large-size;
         margin-bottom: $large-size;

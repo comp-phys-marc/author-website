@@ -22,6 +22,13 @@
         p {
             margin-top: $small-size;
         }
+
+        a {
+            color: $light;
+            margin-top: $small-size;
+
+            text-decoration: none;
+        }
     
         @include element(dropdown) {
             display: block;
@@ -59,6 +66,20 @@
                 text-align: right;
             }
         }
+
+        @include element(left) {
+            display: block;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            padding-top: $small-size;
+
+            a {
+                color: $light;
+                margin-left: $large-size;
+
+                text-decoration: none;
+            }
+        }
     
         @include element(right) {
             display: block;
@@ -70,7 +91,7 @@
                 float: right;
 
                 display: inline-grid;
-                grid-template-columns: 130px [col-start] 20px [col-start] 80px [col-start];
+                grid-template-columns: 110px [col-start] 20px [col-start] 80px [col-start];
                 
                 @include element(create) {
                     grid-column-start: 1;
@@ -125,7 +146,7 @@
 
         @include element(left) {
             display: inline-grid;
-            grid-template-columns: $large-size [col-start] 2 * $large-size [col-start] 65px [col-start] $xlarge-size [col-start] 2* $large-size [col-start];
+            grid-template-columns: $xlarge-size [col-start] $xlarge-size [col-start] $xlarge-size [col-start] $xlarge-size [col-start];
 
             img {
                 display: block;
