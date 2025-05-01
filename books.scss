@@ -1,0 +1,98 @@
+.book {
+    display: grid;
+    grid-template-columns: 30% [col-start] 70% [col-start];
+
+    color: $dark;
+
+    p {
+        height: auto;
+    }
+    
+    @include tinyScreen() {
+        grid-template-columns: 100% [col-start];
+    }
+
+    img {
+        width: 100%;
+        border-radius: $small-size; 
+    }
+
+    @include element(left) {
+        padding: $normal-size;
+        overflow: visible;
+    }
+
+    @include element(right) {
+        padding: $xlarge-size;
+
+        @include smallScreen {
+            padding: $small-size;
+        }
+
+        @include element(highlights) {
+            @include smallScreen {
+                display: none;
+            }
+
+            @include tinyScreen {
+                display: block;
+            }
+        }
+    }
+
+    @include element(info-grid) {
+        @include element(title) {
+            font-size: $medium-size;
+
+            @include smallScreen {
+                display: none;
+            }
+
+            @include tinyScreen {
+                display: block;
+            }
+        }
+
+        @include element(price) {
+            font-size: $medium-size;
+
+            @include smallScreen {
+                display: none;
+            }
+
+            @include tinyScreen {
+                display: block;
+            }
+        }
+    }
+} 
+
+.info-grid {
+    @include element(buy) {
+        margin-top: 0 !important;
+    }
+}
+
+.circle {
+    position: absolute;
+    z-index: -1;
+    margin-left: -80px;
+    background-image: radial-gradient(circle, $grey, $lightgrey 66%, transparent 66%);
+    overflow: visible;
+    height: 42vw;
+    width: 42vw;
+    max-height: 500px;
+    max-width: 500px;
+
+    @include smallScreen {
+        display: none;
+    }
+
+    @include modifier(small) {
+
+    }
+}
+
+button {
+    cursor: pointer;
+}

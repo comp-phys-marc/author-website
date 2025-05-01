@@ -22,6 +22,11 @@
             column-gap: 10%;
             grid-template-columns: 90% [col-start];
         }
+
+        a {
+            color: darkgray;
+            text-decoration: none;
+        }
     }
 
     div {

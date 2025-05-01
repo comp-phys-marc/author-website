@@ -145,11 +145,15 @@
     margin: 10px;
   }
 }
-.subheader .utility-bar__left p {
+.subheader .utility-bar__left a {
   display: block;
+  text-decoration: none;
+  color: #111827;
+  margin-top: 22px;
+  margin-left: 15px;
 }
 @media only screen and (max-width: 1000px) {
-  .subheader .utility-bar__left p {
+  .subheader .utility-bar__left a {
     display: none;
   }
 }
@@ -209,6 +213,96 @@
 .subheader .utility-bar__right p {
   float: right;
   margin-left: -10px;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: 30% [col-start] 70% [col-start];
+  color: #111827;
+}
+.book p {
+  height: auto;
+}
+@media only screen and (max-width: 630px) {
+  .book {
+    grid-template-columns: 100% [col-start];
+  }
+}
+.book img {
+  width: 100%;
+  border-radius: 10px;
+}
+.book__left {
+  padding: 15px;
+  overflow: visible;
+}
+.book__right {
+  padding: 100px;
+}
+@media only screen and (max-width: 1000px) {
+  .book__right {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .book__right__highlights {
+    display: none;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .book__right__highlights {
+    display: block;
+  }
+}
+.book__info-grid__title {
+  font-size: 22px;
+}
+@media only screen and (max-width: 1000px) {
+  .book__info-grid__title {
+    display: none;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .book__info-grid__title {
+    display: block;
+  }
+}
+.book__info-grid__price {
+  font-size: 22px;
+}
+@media only screen and (max-width: 1000px) {
+  .book__info-grid__price {
+    display: none;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .book__info-grid__price {
+    display: block;
+  }
+}
+
+.info-grid__buy {
+  margin-top: 0 !important;
+}
+
+.circle {
+  position: absolute;
+  z-index: -1;
+  margin-left: -80px;
+  background-image: radial-gradient(circle, lightgrey, rgb(223.75, 223.75, 223.75) 66%, transparent 66%);
+  overflow: visible;
+  height: 42vw;
+  width: 42vw;
+  max-height: 500px;
+  max-width: 500px;
+}
+@media only screen and (max-width: 1000px) {
+  .circle {
+    display: none;
+  }
+}
+button {
+  cursor: pointer;
 }
 
 .breadcrumb {
@@ -522,6 +616,10 @@ img {
     column-gap: 10%;
     grid-template-columns: 90% [col-start];
   }
+}
+.site-map__grid a {
+  color: darkgray;
+  text-decoration: none;
 }
 .site-map div {
   margin-top: 15px;

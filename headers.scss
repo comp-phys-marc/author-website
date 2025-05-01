@@ -170,8 +170,12 @@
                 }
             }
 
-            p {
+            a {
                 display: block;
+                text-decoration: none;
+                color: $dark;
+                margin-top: $medium-size;
+                margin-left: $normal-size;
                 
                 @include smallScreen() {
                     display: none;
