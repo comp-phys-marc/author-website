@@ -692,6 +692,9 @@ vr {
 .container .no-offset {
   margin-top: 0;
 }
+.container .small-offset {
+  margin-top: -150px;
+}
 
 video {
   width: 100vw;
