@@ -7,6 +7,19 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
+    <script>
+        window.onload = (event) => {
+            showMercury();  
+        };
+        function showMercury() {
+            document.getElementById('mercury').style.display = 'grid';
+            document.getElementById('springer').style.display = 'none';
+        }
+        function showSpringer() {
+            document.getElementById('mercury').style.display = 'none';
+            document.getElementById('springer').style.display = 'grid';
+        }
+    </script>
     <body>
         <div class='header'>
             <div class='banner'>
@@ -49,7 +62,7 @@
             </div>
             <div class='main-matter'>
                 <div class='image-grid'>
-                    <img class='image--feature' src='images/mercury_front.png'/>
+                    <img class='image image--feature' src='images/mercury_front.png' onClick="showMercury()"/>
                     <div class='image-grid__vertical'>
                         <a href="https://arxiv.org/search/?query=Edwards%2C+Marcus&searchtype=author&abstracts=show&order=-announced_date_first&size=50">
                             <img class='image' src='images/arxiv-logo-primary.jpg'/>
@@ -58,9 +71,9 @@
                             <img class='image' src='images/medium_logo.png'/>   
                         </a>
                     </div>
-                    <img class='image image' src='images/QIP_cover.jpg'/>
+                    <img class='image image' src='images/QIP_cover.jpg' onClick="showSpringer()"/>
                 </div>
-                <div class='info-grid'>
+                <div class='info-grid' id="mercury">
                     <div class='info-grid__left'>
                         <h1 class='info-grid__left__title'>The Mercury Relay</h1>
                         <div class='info-grid__left__form'>
@@ -153,43 +166,75 @@
                         <button class='info-grid__buy'>Coming soon!</button>
                     </div>
                 </div>
+                <div class='info-grid' id="springer">
+                    <div class='info-grid__left'>
+                        <h1 class='info-grid__left__title'>A review of quantum and hybrid quantum/classical blockchain protocols</h1>
+                        <div class='info-grid__left__form'>
+                            <p class='info-grid__price'>$39.95</p>
+                            <br/>
+                            <a href="https://link.springer.com/article/10.1007/s11128-020-02672-y"><button class='info-grid__buy'>Purchase</button></a>
+                        </div>
+                        <p>
+                            Blockchain technology is facing critical issues of scalability, efficiency and sustainability. These problems are necessary to solve if 
+                            blockchain is to become a technology that can be used responsibly. Useful quantum computers could potentially be developed by the time 
+                            that blockchain will be widely implemented for mission-critical work at financial and other institutions. Quantum computing will not 
+                            only cause challenges for blockchain, but can also be harnessed to better implement parts of blockchain technologies including 
+                            cryptocurrencies. We review the work that has been done in the area of quantum blockchain and hybrid quantum–classical blockchain technology 
+                            and discuss open questions that remain.
+                        </p>
+                        <br/>
+                        <small>
+                            Highlights
+                            <ul>
+                                <li>Lit review</li>
+                                <li>Comprehensive</li>
+                                <li>Cited by 37</li>
+                            </ul>
+                        </small>
+                    </div>
+                    <div class='info-grid__right'>
+                        <h1 class='info-grid__right__title'>PDF</h1>
+                        <p class='info-grid__price'>$39.95</p>
+                        <a href="https://link.springer.com/article/10.1007/s11128-020-02672-y"><button class='info-grid__buy'>Purchase</button></a>
+                    </div>
+                </div>
                 <div class='purchased'>
                     <h3>Check out these other writings!</h3>
                     <div class='purchased__image-grid'>
                         <div>
-                            <img src='images/product-page-01-related-product-01.jpg'/>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10821119"><img src='images/ieee.png'/></a>
                             <p>
-                                <small class='purchase-text'>Basic Tee</small>
+                                <small class='purchase-text'>Towards Readout-Aware Layout Synthesis for Spin Qubit Systems with Double Quantum Dot Readouts</small>
                                 <small class='purchase-text purchase-text--right'>$35</small>
                                 <br/>
-                                <small class='purchase-text--colour'>Black</small>
+                                <small class='purchase-text--colour'>Paper</small>
                             </p>
                         </div>
                         <div>
-                            <img src='images/product-page-01-related-product-02.jpg'/>
+                            <a href="https://uwspace.uwaterloo.ca/items/217087f7-8443-4ebd-8299-bba947a552c0"><img src='images/uw.png'/></a>
                             <p>
-                                <small class='purchase-text'>Basic Tee</small>
-                                <small class='purchase-text purchase-text--right'>$35</small>
+                                <small class='purchase-text'>Towards Practical Hybrid Quantum / Classical Computing</small>
+                                <small class='purchase-text purchase-text--right'>$0</small>
                                 <br/>
-                                <small class='purchase-text--colour'>Aspen White</small>
+                                <small class='purchase-text--colour'>Thesis</small>
                             </p>
                         </div>
                         <div>
-                            <img src='images/product-page-01-related-product-03.jpg'/>
+                            <a href="https://patents.google.com/patent/US20210303973A1/en"><img src='images/scholar.png'/></a>
                             <p>
-                                <small class='purchase-text'>Basic Tee</small>
-                                <small class='purchase-text purchase-text--right'>$35</small>
+                                <small class='purchase-text'>AI-based personalized financial recommendation assistant system and method</small>
+                                <small class='purchase-text purchase-text--right'>$0</small>
                                 <br/>
-                                <small class='purchase-text--colour'>Charcoal</small>
+                                <small class='purchase-text--colour'>Patent</small>
                             </p>
                         </div>
                         <div>
-                            <img src='images/product-page-01-related-product-04.jpg'/>
+                            <a href="https://qubytes.org/2021/07/08/a-review-and-discussion-of-variational-quantum-anomaly-detection/"><img src='images/qubytes.png'/></a>
                             <p>
-                                <small class='purchase-text'>Artwork Tee</small>
-                                <small class='purchase-text purchase-text--right'>$35</small>
+                                <small class='purchase-text'>A Review and Discussion of Variational Quantum Anomaly Detection</small>
+                                <small class='purchase-text purchase-text--right'>$0</small>
                                 <br/>
-                                <small class='purchase-text--colour'>Iso Dots</small>
+                                <small class='purchase-text--colour'>Article</small>
                             </p>
                         </div>
                     </div>

@@ -18,6 +18,7 @@ img {
 
     .image {
         height: 100%;
+        cursor: pointer;
 
         @include smallScreen() {
             display: none;
