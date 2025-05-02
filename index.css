@@ -312,6 +312,10 @@
     display: none;
   }
 }
+.circle--dark {
+  background-image: radial-gradient(circle, black, #111827 66%, transparent 66%);
+}
+
 button {
   cursor: pointer;
 }

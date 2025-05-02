@@ -88,8 +88,8 @@
         display: none;
     }
 
-    @include modifier(small) {
-
+    @include modifier(dark) {
+        background-image: radial-gradient(circle, black, $dark 66%, transparent 66%);
     }
 }
 
