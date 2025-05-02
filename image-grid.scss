@@ -32,5 +32,11 @@ img {
     @include element(vertical) {
         display: grid;
         row-gap: 32px;
+
+        img {
+            border-color: $grey;
+            border-width: 1px;
+            border-style: solid;
+        }
     }
 }

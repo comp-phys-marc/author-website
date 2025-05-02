@@ -36,6 +36,32 @@ vr {
     margin-right: auto;
 }
 
+.container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+
+    img {
+        width: 100vw;
+        margin-top: -300px;
+        @include smallScreen() {
+            display: none;
+        }
+    }
+
+    .no-offset {
+        margin-top: 0;
+    }
+}
+
+video {
+    width: 100vw;
+    margin-top: -300px;
+}
+
 .footer {
     padding-top: $xlarge-size;
     padding-bottom: $large-size;

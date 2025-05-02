@@ -1,18 +1,22 @@
 .header {
     height: $large-size;
-
-    background-color: $dark;
     color: $light;
 
     .banner {
+        background-color: $dark;
         display: grid;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 0;
+        width: 100vw;
 
         @include smallScreen {
             display: flex;
         }
     
         height: inherit;
-        max-width: $max-width;
     
         margin-left: auto;
         margin-right: auto;
@@ -115,6 +119,11 @@
 
 .subheader {
     height: 62px;
+    margin-top: 20vh;
+
+    @include smallScreen() {
+        margin-top: 10vh;
+    }
 
     font-size: small;
     color: $dark;
