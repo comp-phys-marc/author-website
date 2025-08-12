@@ -25,6 +25,63 @@ vr {
     margin-top: 7px;
 }
 
+.highlight {
+    align-items: center;
+    align-content: center;
+    margin-bottom: $large-size;
+    background-color: pink;
+    padding-bottom: $large-size;
+
+    @include element(text) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: $large-size;
+
+        margin-bottom: $large-size;
+
+        @include smallScreen() {
+            margin-bottom: $medium-size;
+        }
+    }
+    @include element(image) {
+        display: flex;
+        width: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 10px 10px 5px grey;
+
+        @include tinyScreen() {
+            width: 95vw;
+        }
+    }
+
+    @include element(buy) {
+
+        @include smallScreen() {
+            width: 90vw;
+            margin: 5vw;
+        }
+
+        height: 50px;
+        width: 33vw;
+
+        margin-left: 33vw;
+        margin-right: 33vw;
+        margin-top: $large-size;
+        
+        color: $light;
+        background-color: $brand;
+        
+        border-color: transparent;
+        border-radius: $tiny-size;
+
+        font-size: medium;
+    }
+}
+
 .main-matter {
     max-width: $max-width - $medium-size * 3;
 

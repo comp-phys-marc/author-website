@@ -568,6 +568,58 @@ vr {
   margin-top: 7px;
 }
 
+.highlight {
+  align-items: center;
+  align-content: center;
+  margin-bottom: 42px;
+  background-color: pink;
+  padding-bottom: 42px;
+}
+.highlight__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 42px;
+  margin-bottom: 42px;
+}
+@media only screen and (max-width: 1000px) {
+  .highlight__text {
+    margin-bottom: 22px;
+  }
+}
+.highlight__image {
+  display: flex;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 10px 5px grey;
+}
+@media only screen and (max-width: 630px) {
+  .highlight__image {
+    width: 95vw;
+  }
+}
+.highlight__buy {
+  height: 50px;
+  width: 33vw;
+  margin-left: 33vw;
+  margin-right: 33vw;
+  margin-top: 42px;
+  color: whitesmoke;
+  background-color: #5045e4;
+  border-color: transparent;
+  border-radius: 5px;
+  font-size: medium;
+}
+@media only screen and (max-width: 1000px) {
+  .highlight__buy {
+    width: 90vw;
+    margin: 5vw;
+  }
+}
+
 .main-matter {
   max-width: 1234px;
   margin-left: auto;
