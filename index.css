@@ -242,6 +242,9 @@
 .book img {
   width: 100%;
   border-radius: 10px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
 }
 .book__left {
   padding: 15px;
@@ -365,8 +368,6 @@ img {
   }
   .image-grid .image--feature {
     display: block;
-    border-width: 1px;
-    border-color: black;
   }
 }
 .image-grid__vertical {
