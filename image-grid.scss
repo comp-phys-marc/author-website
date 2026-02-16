@@ -25,6 +25,8 @@ img {
 
             @include modifier(feature) {
                 display: block;
+                border-width: 1px;
+                border-color: black;
             }
         }
     }
